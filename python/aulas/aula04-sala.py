@@ -10,4 +10,4 @@ elif 2826.66 <= bs <= 3751.05:
 elif 3751.06 <= bs <= 4664.68:
     print("Imposto de 22.5%")
 else:
-    print("Imposto de 27.5%")
+    print("Imposto de 27.5%")..

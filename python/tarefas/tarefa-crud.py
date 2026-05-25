@@ -22,7 +22,7 @@ opcao = 0
 continuar = "S"
 print("Bem Vindo ao Software Timão - Agenda de Contatos\n")
 while True:
-    print("Escolha a opção desejada: \n1- Cadastrar \n2- Listar \n3- Alterar \n4- Deletar \n5- Consultar \n0- Sair\n")
+    print("Escolha a opção desejada: \n1- Cadastrar \n2- Listar \n3- Alterar \n4- Deletar \n5- Consultar \n6- Gravar dados em um Arquivo \n7- Ler dados de um Arquivo \n0- Sair\n")
     opcao = int(input("Digite a opção desejada: "))
     match opcao:
         case 1:
@@ -123,6 +123,26 @@ while True:
                 pos += 1
             if encontrado == False:
                 print("Contato não encontrado\n")
+        case 6: 
+            print("-----------/ Gravar dados em um Arquivo /----------")
+            print("Voce deseja gravar os dados do cadrastro em um arquivo? (S/N)")
+            continuar = input("Digite S ou N: ")
+            for continuar in "S" or "s":
+                arq = open("agenda.txt", "w")
+                for aux in dados:
+                    nome = aux[0]
+                    sexo = aux[1]
+                    celular = aux[2]
+                    email = aux[3]
+                    idade = aux[4]
+                    arq.write(f"Nome: {nome} / Sexo: {sexo} / Celular: {celular} / Email: {email} / Idade: {idade}\n")
+                arq.close()
+
+        case 7:
+            print("-----------/ Ler dados de um Arquivo /----------")
+            arq = open("agenda.txt", "r")
+            print(arq.read())
+            arq.close()
         case 0:
             print("Saindo do Software Timão")
             break

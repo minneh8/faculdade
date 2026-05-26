@@ -1,0 +1,8 @@
+1,Ana Beatriz Monteiro,29,1.68,62,F,S,0,SP
+2,Carlos Henrique Lima,35,1.82,85,M,C,2,EM
+3,Juliana Alves Rocha,27,1.70,58,F,S,0,PR
+4,Rafael Souza Martins,41,1.76,90,M,D,1,SP
+5,Fernanda Oliveira Costa,33,1.65,61,F,C,2,SP
+6,Gustavo Pereira Nunes,24,1.80,74,M,S,0,EM
+7,Mariana Fernandes Silva,38,1.72,67,F,V,3,SP
+8,Lucas Minneh,24,1.70,70,M,S,0,SP
